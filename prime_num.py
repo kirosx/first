@@ -3,10 +3,12 @@ def prime_or_not(number):
         if number % i == 0:
             return False
     return True
-a=[]
-i=1
-while len(a)<=10000:
-    if prime_or_not(i):
-        a.append(i)
-    i+=1
-print(a[-1])
+
+def what_prime(number):
+    a=[]
+    i=1
+    while len(a)<=10000:
+        if prime_or_not(i):
+            a.append(i)
+        i+=1    
+    print(a[-1])
