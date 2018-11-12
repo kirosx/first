@@ -13,9 +13,11 @@ def what_prime(number):
             a.append(i)
         i+=1
     print(f'Число {a[-1]}')
+print('Этот скрипт находит n-ое простое число и выводит время, необходимое для его нахождения')
+n=int(input('Enter N:'))
 t1 = time.process_time()
-what_prime(100000)
+what_prime(n)
 t2 = time.process_time()
-print(f'Вычисление 100000х простого числа заняло {t2-t1}') 
+print(f'Вычисление {n} простого числа заняло {t2-t1} секунд') 
 
 
