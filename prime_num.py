@@ -7,8 +7,8 @@ def prime_or_not(number):
 def what_prime(number):
     a=[]
     i=1
-    while len(a)<=10000:
+    while len(a)<=number:
         if prime_or_not(i):
             a.append(i)
-        i+=1    
+        i+=1
     print(a[-1])
